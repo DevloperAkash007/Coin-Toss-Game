@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import './index.css'
+
 const coinImages = {
   headsImg: 'https://assets.ccbp.in/frontend/react-js/heads-img.png',
   tailsImg: 'https://assets.ccbp.in/frontend/react-js/tails-img.png',
@@ -10,7 +11,7 @@ class CoinToss extends Component {
     totalCount: 0,
     headCount: 0,
     tailCount: 0,
-  } 
+  }
 
   tossCoin = () => {
     const tossResult = Math.floor(Math.random() * 2)
@@ -44,9 +45,15 @@ class CoinToss extends Component {
             Toss Coin
           </button>
           <ul className="toss-result-count-container">
-            <li className="list-item"><p>Total: {totalCount}</p></li>
-            <li className="list-item"><p>Heads: {headCount}</p></li>
-            <li className="list-item"><p>Tails: {tailCount}</p></li>
+            <li className="list-item">
+              <p>Total: {totalCount}</p>
+            </li>
+            <li className="list-item">
+              <p>Heads: {headCount}</p>
+            </li>
+            <li className="list-item">
+              <p>Tails: {tailCount}</p>
+            </li>
           </ul>
         </div>
       </div>

@@ -3,8 +3,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  overflow: auto;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 30px;
   padding-bottom: 30px;
   background-image: linear-gradient(to right, #f9d423, #e2a139);
@@ -16,8 +15,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 50%;
 }
+@media (max-width: 767px) {
+  .toss-container {
+    width: 90%;
+  }
+}
+
 .heading {
   text-align: center;
   color: #a35200;
@@ -38,9 +43,13 @@
 .toss-image-container {
   width: 50%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .toss-image {
-  width: 100%;
+  width: 70%;
 }
 .button {
   background-color: #f9d423;
@@ -68,7 +77,6 @@
     flex-direction: row;
     justify-content: space-between;
     width: 50%;
-
     align-items: center;
   }
 }
